@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bags of Fun</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff9f9;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .menu-card {
+      background: #ffe4ec;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .menu-card ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      text-align: center;
+    }
+    .menu-card li {
+      background: #fff;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-weight: bold;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: scale(1.02);
+    }
+    .product img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 5px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #ff1493;
+    }
+    .order-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+  <script>
+    function showOrderPage() {
+      document.getElementById("store").style.display = "none";
+      document.getElementById("order").style.display = "block";
+    }
+    function goBack() {
+      document.getElementById("store").style.display = "block";
+      document.getElementById("order").style.display = "none";
+    }
+  </script>
+</head>
+<body>
+  <div id="store">
+    <h1>Welcome to Our Store</h1>
+    <p style="text-align:center">We have so many themes, choose which one you want. We make them all at our home. Nothing manufactured. Its safe for kids. Its all made up of papers and more non-toxic materials. We are not showing any type of image in our store because they are blind bags and we can't revel the surprise items in it🎉🎉
+Start to shop✨✨</p>
+
+    <div class="menu-card">
+      <h2>Our Menu</h2>
+      <p><em>Offer till 30th June 2025: Buy 2, Get 1 Surprise Item Free!</em></p>
+      <ul>
+        <li>Barbie - Rs 300</li>
+        <li>Marvel - Rs 300</li>
+        <li>Cars - Rs 350</li>
+        <li>My Little Pony - Rs 400</li>
+        <li>Animals - Rs 400</li>
+        <li>Squid Game S1 - Rs 450</li>
+        <li>Squid Game S2 - Rs 500</li>
+        <li>Football - Rs 500</li>
+        <li>Badminton - Rs 500</li>
+        <li>Cricket - Rs 600</li>
+        <li>Soccer - Rs 600</li>
+      </ul>
+    </div>
+
+    <div class="products">
+      <div class="product">
+        <img src="barbie.jpg" alt="Barbie">
+        <h3>Barbie</h3>
+        <p>Rs 300</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="marvels.jpg" alt="Marvels">
+        <h3>Marvels</h3>
+        <p>Rs 300</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="Cars.jpg" alt="Cars">
+        <h3>Cars</h3>
+        <p>Rs 350</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="my little pony.jpg" alt="My little pony">
+        <h3>My little pony</h3>
+        <p>Rs 400</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="animals.jpg" alt="Animals">
+        <h3>Animals</h3>
+        <p>Rs 400</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="squid game S1.jpg" alt="Squid game S1">
+        <h3>Squid game S1</h3>
+        <p>Rs 450</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>  
+        <img src="squid game S2.jpg" alt="Squid game S2">
+        <h3>Squid game S2</h3>
+        <p>Rs 500</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="football.jpg" alt="Football">
+        <h3>Football</h3>
+        <p>Rs 500</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="badminton.jpg" alt="Badminton">
+        <h3>Badminton</h3>
+        <p>Rs 500</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+        <img src="cricket.jpg" alt="Cricket">
+        <h3>Cricket</h3>
+        <p>Rs 600</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+       <img src="soccer.jpg" alt="Soccer">
+        <h3>Soccer</h3>
+        <p>Rs 600</p>
+        <button class="btn">Add to Cart</button>
+        <button class="btn" onclick="showOrderPage()">Buy Now</button>
+      </div>
+      <!-- Repeat similar blocks for other themes or copy and update manually -->
+    </div>
+  </div>
+
+  <div id="order" style="display:none;">
+    <div class="order-section">
+      <h2>To Order</h2>
+      <p>Message on: <strong>8308802477</strong></p>
+      <button class="btn" onclick="goBack()">Back to Menu</button>
+    </div>
+  </div>
+</body>
+</html>
